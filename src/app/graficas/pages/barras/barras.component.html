@@ -1,1 +1,19 @@
-<p>barras works!</p>
+<div class="row">
+    <div class="col">
+        <div>
+            <div style="display: block">
+                <canvas baseChart
+                    [datasets]="barChartData"
+                    [labels]="barChartLabels"
+                    [options]="barChartOptions"
+                    [legend]="barChartLegend"
+                    [chartType]="barChartType">
+                </canvas>
+            </div>
+        </div>
+        
+        <button (click)="randomize()">
+            Update
+        </button>
+    </div>
+</div>
